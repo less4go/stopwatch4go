@@ -15,8 +15,8 @@ func (s *Stopwatch) Start() {
 }
 
 // Stop func
-func (s *Stopwatch) Stop() *Watch {
-	return &Watch{
+func (s *Stopwatch) Stop() *Watcher {
+	return &Watcher{
 		startTime: s.start,
 		endTime:   time.Now(),
 	}

@@ -4,23 +4,23 @@ import (
 	"time"
 )
 
-// Watch struct
-type Watch struct {
+// Watcher struct
+type Watcher struct {
 	startTime time.Time
 	endTime   time.Time
 }
 
 // StartTime func
-func (w *Watch) StartTime() time.Time {
+func (w *Watcher) StartTime() time.Time {
 	return w.startTime
 }
 
 // EndTime func
-func (w *Watch) EndTime() time.Time {
+func (w *Watcher) EndTime() time.Time {
 	return w.endTime
 }
 
 // Elapsed func
-func (w *Watch) Elapsed() time.Duration {
+func (w *Watcher) Elapsed() time.Duration {
 	return w.endTime.Sub(w.startTime)
 }
